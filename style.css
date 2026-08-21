@@ -1,0 +1,49 @@
+/* 1. Global Reset & Modern Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Soft light grey background */
+    color: #333333;            /* Dark grey text (easier on eyes than black) */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Style the Header Banner */
+header {
+    background-color: #1a365d; /* Deep professional blue */
+    color: #ffffff;            /* Crisp white text */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* 3. Style the Main Content Area */
+main {
+    max-width: 800px;
+    margin: 40px auto;        /* Centers the container on the screen */
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff; /* White card effect */
+    padding: 30px;
+    border-radius: 8px;        /* Smooth rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow drop */
+}
+
+section h2 {
+    color: #1a365d;
+    margin-top: 0;
+}
+
+/* 4. Style the Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 0.9rem;
+}
