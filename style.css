@@ -47,3 +47,85 @@ footer {
     color: #777777;
     font-size: 0.9rem;
 }
+
+/* 5. Mobile-First Grid System */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* On mobile, cards stack in 1 column */
+    gap: 20px;                 /* Adds a clean space between the cards */
+}
+
+/* Style the lists inside our stats card */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* 6. Media Query: If the screen is wider than 768px (Desktop/Tablet) */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Instantly snaps to 2 equal columns! */
+    }
+}
+/* 7. Newsletter Form Styling */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1a365d;
+}
+
+/* Style the text boxes */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Prevents input fields from stretching weirdly */
+}
+
+/* Add a smooth blue glow when the user clicks inside a box */
+.input-group input:focus {
+    outline: none;
+    border-color: #1a365d;
+    box-shadow: 0 0 5px rgba(26, 54, 93, 0.2);
+}
+
+/* Style the action button */
+.submit-btn {
+    width: 100%;
+    background-color: #1a365d;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth hover transition */
+}
+
+/* Make button change color slightly when hovered */
+.submit-btn:hover {
+    background-color: #2b5288;
+}
